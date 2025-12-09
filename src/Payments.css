@@ -1,0 +1,86 @@
+/* Default Light Mode */
+.payments-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.balance {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .payments-container {
+        background: #111111;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(53, 53, 53, 0.1);
+    }
+
+    h2, h3 {
+        color: #fff;
+    }
+
+    .balance {
+        color: #00bfff;
+    }
+
+    input {
+        background: #333;
+        color: #fff;
+        border: 2px solid #555;
+    }
+
+    button {
+        background: #00bfff;
+    }
+
+    button:hover {
+        background: #008ecc;
+    }
+}

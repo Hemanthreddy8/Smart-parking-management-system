@@ -1,0 +1,119 @@
+/* 🔹 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4A90E2, #00509E);
+  padding: 20px;
+}
+
+/* 🔹 Auth Container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🔹 Title */
+.auth-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* 🔹 Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 🔹 Input Fields */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* 🔹 Buttons */
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4A90E2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #00509E;
+}
+
+/* 🔹 Link Buttons */
+.auth-form .link-btn {
+  background: none;
+  color: #4A90E2;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.auth-form .link-btn:hover {
+  color: #00509E;
+}
+
+/* 🔹 Message Box */
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+      width: 90%;
+  }
+}
+
+/* 🔹 Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
